@@ -1,13 +1,5 @@
 <div ng-controller="ToolbarCtrl">
 	<div class="form-horizontal">
-		<div class="btn-group hidden-desktop">
-			<a type="button" class="btn bigbtn" ng-click="nextEntry()" title="${toolbar.next_entry}"><i class="icon-chevron-down"></i></a>
-		</div>
-
-		<div class="btn-group hidden-desktop">
-			<a type="button" class="btn bigbtn" ng-click="previousEntry()" title="${toolbar.previous_entry}"><i class="icon-chevron-up"></i></a>
-		</div>
-
 		<div class="btn-group hidden-phone hidden-tablet">
 			<a type="button" class="btn" ng-click="nextEntry()" title="${toolbar.next_entry}"><i class="icon-chevron-down"></i></a>
 			<a type="button" class="btn" ng-click="previousEntry()" title="${toolbar.previous_entry}"><i class="icon-chevron-up"></i></a>
@@ -17,6 +9,14 @@
 			<button type="button" class="btn" ng-click="MobileService.toggleRightMenu()">
 				<i ng-class="{'icon-double-angle-right' : !MobileService.rightMenu, 'icon-double-angle-left': MobileService.rightMenu}"></i>
 			</button>
+		</div>
+
+		<div class="btn-group hidden-desktop">
+			<a type="button" class="btn bigbtn" ng-click="previousEntry()" title="${toolbar.previous_entry}"><i class="icon-chevron-up"></i></a>
+		</div>
+
+		<div class="btn-group hidden-desktop">
+			<a type="button" class="btn bigbtn" ng-click="nextEntry()" title="${toolbar.next_entry}"><i class="icon-chevron-down"></i></a>
 		</div>
 	
 		<div class="actions btn-group">
