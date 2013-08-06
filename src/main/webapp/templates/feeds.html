@@ -9,7 +9,10 @@
 		</div>
 		<div class="span10 main-content">
 			<div class="toolbar" ng-include="'templates/_toolbar.html'"></div>
-			<div class="entryList">
+			<div class="entryList bigentrylist hidden-desktop">
+				<div ui-view></div>
+			</div>
+			<div class="entryList hidden-phone hidden-tablet">
 				<div ui-view></div>
 			</div>
 		</div>
